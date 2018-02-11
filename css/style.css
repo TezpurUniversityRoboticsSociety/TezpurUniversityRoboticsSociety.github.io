@@ -9,6 +9,7 @@
 /* 1)For the navbar */
 .navbar  {
     background: black;
+    border-bottom: solid 0.1px white;
 }
 .nav-item {
     margin-left: 20px;
@@ -17,7 +18,7 @@
     transition: 0.5s;
 }
 .nav-item:hover{
-	background: #ce001b;
+	border-bottom: solid 2px #ce001b;
 }
 
 /* 2)Jumbotron */
@@ -27,12 +28,12 @@
 }
 .jumbotron{
   text-align: center;
-  padding-top: 230px;
+  padding-top: 280px;
   background-color: rgba(0,0,0,0);
 }
 .btn{
-  background: #343a40;
-  color: white;
+  background: white;
+  color: black;
   font-family: 'Viga', sans-serif;
   letter-spacing: 3px;
 }
@@ -50,4 +51,14 @@
   padding: 0; 
   margin: 0; 
   overflow: hidden;
+}
+
+.bottomlayer{
+	position: absolute;
+	z-index: 1;
+}
+.toplayer{
+	position: relative;
+	z-index: 2;
+	color: white;
 }
