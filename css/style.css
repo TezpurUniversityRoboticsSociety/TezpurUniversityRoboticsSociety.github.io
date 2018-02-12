@@ -18,7 +18,7 @@
     transition: 0.5s;
 }
 .nav-item:hover{
-	border-bottom: solid 2px #ce001b;
+	border: solid 6px #ce001b;
 }
 
 /* 2)Jumbotron */
@@ -26,9 +26,22 @@
   font-family: 'Viga', sans-serif;
   letter-spacing: 8px;
 }
+
+@font-face{
+  font-family: "Tokarev";
+  src: url('fonts/Tokarev.ttf');
+  src: 
+      url('fonts/Tokarev.ttf') format('ttf');
+}
+
+.main-text{
+    font-family: "Tokarev";
+    font-size: 130px;
+    font-weight: bold; 
+}
 .jumbotron{
   text-align: center;
-  padding-top: 280px;
+  padding-top: 200px;
   background-color: rgba(0,0,0,0);
 }
 .btn{

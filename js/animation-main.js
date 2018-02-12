@@ -1,15 +1,13 @@
-// One of my first <canvas> experiments, woop! :D 
-
 var SCREEN_WIDTH = window.innerWidth;
 var SCREEN_HEIGHT = window.innerHeight;
 
-var RADIUS = 70;
+var RADIUS = 200;
 
 var RADIUS_SCALE = 1;
 var RADIUS_SCALE_MIN = 1;
 var RADIUS_SCALE_MAX = 1.5;
 
-var QUANTITY = 25;
+var QUANTITY = 20;
 
 var canvas;
 var context;
@@ -18,6 +16,10 @@ var particles;
 var mouseX = SCREEN_WIDTH * 0.5;
 var mouseY = SCREEN_HEIGHT * 0.5;
 var mouseIsDown = false;
+
+
+// Add more color's in the array if required
+var colours = Array("#ff0022","#fff","#ce001b");
 
 function init() {
 
@@ -53,7 +55,7 @@ function createParticles() {
 			shift: { x: mouseX, y: mouseY },
 			speed: 0.01+Math.random()*0.04,
 			targetSize: 1,
-			fillColor: '#' + (Math.random() * 0x404040 + 0xaaaaaa | 0).toString(16),
+			fillColor: colours[Math.floor((Math.random()*colours.length))],
 			orbit: RADIUS*.5 + (RADIUS * .5 * Math.random())
 		};
 		
@@ -111,7 +113,7 @@ function loop() {
 	
 	RADIUS_SCALE = Math.min( RADIUS_SCALE, RADIUS_SCALE_MAX );
 	
-	context.fillStyle = 'rgba(0,0,0,0.05)';
+	context.fillStyle = 'rgba(0,0,0,0.08)';
 		 context.fillRect(0, 0, context.canvas.width, context.canvas.height);
 	
 	for (i = 0, len = particles.length; i < len; i++) {
