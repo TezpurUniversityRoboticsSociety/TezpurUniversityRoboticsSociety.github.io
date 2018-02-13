@@ -1,11 +1,3 @@
-/* 
-1)Navbar
-
-*/
-
-
-
-
 /* 1)For the navbar */
 .navbar  {
     background: black;
@@ -18,7 +10,7 @@
     transition: 0.5s;
 }
 .nav-item:hover{
-	border-bottom: solid 1px #ce001b;
+	border-bottom: solid 2px #ce001b;
 }
 
 /* 2)Jumbotron */
