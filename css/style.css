@@ -57,6 +57,10 @@
 .btn-primary:hover{
 	background: #ce001b;
 }
+#frst,#scnd,#thrd{
+  display: none;
+}
+
 
 
 
@@ -80,22 +84,5 @@
 	color: white;
 }
 
-.test {
-    width:100%;
-    height:80px;
-    background: black;
-    position: relative;
-    color:#fff;
-}
 
-.test:before {
-    content: '';
-    position: absolute;
-    top: 40px; right: 0;
-    border-right: 800px solid white;
-    border-top: 40px solid black;
-    width: 20;
-}
-
-.durp{width:100%;
-text-align:right;}
+   
