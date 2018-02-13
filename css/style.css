@@ -18,25 +18,29 @@
     transition: 0.5s;
 }
 .nav-item:hover{
-	border: solid 6px #ce001b;
+	background-color: #ce001b;
 }
 
 /* 2)Jumbotron */
+.onebg{
+  position: relative;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1489844097929-c8d5b91c456e?auto=format&fit=crop&w=1352&q=80);
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
 .cntrfnt{
   font-family: 'Viga', sans-serif;
   letter-spacing: 8px;
 }
 
-@font-face{
-  font-family: "Tokarev";
-  src: url('fonts/Tokarev.ttf');
-  src: 
-      url('fonts/Tokarev.ttf') format('ttf');
-}
 
 .main-text{
-    font-family: "Tokarev";
+    font-family: 'Fjalla One', sans-serif;
     font-size: 130px;
+    letter-spacing: 20px;
     font-weight: bold; 
 }
 .jumbotron{
@@ -53,6 +57,10 @@
 .btn-primary:hover{
 	background: #ce001b;
 }
+#frst,#scnd,#thrd{
+  display: none;
+}
+
 
 
 
@@ -75,3 +83,6 @@
 	z-index: 2;
 	color: white;
 }
+
+
+   
