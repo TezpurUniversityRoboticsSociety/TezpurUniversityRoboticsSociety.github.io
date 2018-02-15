@@ -1,19 +1,19 @@
 /*navbar begins */
 .navbar  {
   height: 70px;
-  background: transparent; // Transparent initial setting
+  /* Transparent initial setting */
+  background: transparent; 
   display: block;
-  position: fixed;
+  position : fixed;
   width: 100%;
   z-index: 99999;
   transition: all ease .5s;
-  color: white;
 }
 .navbar.shrink {
   height: 70px;
   transition: all ease .5s;
-  background: white; // Change background to white on scroll
-  color: black;
+  /* Change background to white on scroll */
+  background: white; 
 }
 .navbar.shrink{
   padding: 10px;
@@ -24,20 +24,75 @@
     margin-left: 20px;
     letter-spacing: 2.5px;
     transition: 0.5s;
+    color: black;
 }
-.nav-item:hover{
-	border-bottom: solid 2px #ce001b;
-	color: #ce001b;
+.nav-link {
+  color: black;
+}
+
+.fill ul li a {
+  position: relative;
+}
+
+.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+.fill ul li a {
+  transition: all 2s;
+}
+
+.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+.fill ul li a:hover {
+  color: rgb(245, 0, 0);
+  z-index: 1;
+}
+.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 2px;
+  }
+  50% {
+    width: 100%;
+    height: 2px;
+  }
+  100% {
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 0, 0);
+  }
 }
 /*navbar ends*/
-
-/*layer1 begins*/
 .layer1bg{
-  background-color: #FFAB43;
+  background:white;
 }
+/*layer1 begins*/
 .layer1{
   position: relative;
-  background-color: #00D3EC;
+  background: linear-gradient(to bottom right, #d35b05, #b33270);
   height: 100vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
@@ -46,16 +101,30 @@
   clip-path: polygon(
     0 0,
     100% 0,
-    100% 100%,
+    100% 110%,
     0 calc(100% - 5vw)
   );
 }
+
+@font-face{
+  font-family: 'Bungee Inline';
+  src: url('./bootstrap/fonts/BungeeInline-Regular.ttf') 
+}
+#turs_text{
+  text-align: center;
+  padding-top: 15%;
+  font-size: 90px;
+  letter-spacing: 5px;
+  font-family: 'Bungee Inline';
+  font-weight: bolder;
+}
+
 #land_text{
   text-align: center;
-  padding-top: 20%;
-  font-size: 70px;
+  font-size: 50px;
   letter-spacing: 8px;
 }
+
 #land_text2{
   text-align: center;
   font-size: 20px;
@@ -63,29 +132,33 @@
 .btn-lg{
   display: table;
   margin: 0px auto;
-  margin-top: 30px;
+  margin-top: 10%;
   background: #EF5607;
   border: 1px solid #EF5607;
   width: 10%;
   border-radius: 0%; 
 }
+.btn-lg:hover{
+  background: #EF5607;
+  border: 1px solid #EF5607;
+}
 /*layer1 ends*/
 
 /*layer2 begins*/
 .layer2bg{
-  background-color: #E8EDF4;
+  background: linear-gradient(to bottom right, #BB3C56, #b33270);
 }
 .layer2{
   position: relative;
-  background-color: #FFAB43;
+  background-color: white;
   height: 100vh;
-  color: white;
+  color: rgb(12, 11, 11);
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
   font-size: 30%;
   clip-path: polygon(
-    0 0,
-    100% 0,
+    0 -10%,
+    100% 10%,
     100% 100%,
     0 calc(100% - 5vw)
   );
@@ -143,3 +216,7 @@
   font-size: 30%;
 }
 /*layer6 ends*/
+
+
+
+
