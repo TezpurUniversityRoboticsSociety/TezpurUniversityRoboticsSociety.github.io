@@ -1,4 +1,4 @@
-/* 1)For the navbar */
+/*navbar begins */
 .navbar  {
     background: black;
     border-bottom: solid 0.1px white;
@@ -11,66 +11,76 @@
 }
 .nav-item:hover{
 	border-bottom: solid 2px #ce001b;
+	color: #ce001b;
 }
+/*navbar ends*/
 
-/* 2)Jumbotron */
-.onebg{
+/*layer1 begins*/
+.layer1{
   position: relative;
-  height: 100%;
+  background-color: #00D3EC;
+  height: 100vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
 }
 
-.cntrfnt{
-  font-family: 'Viga', sans-serif;
+#land_text{
+  text-align: center;
+  padding-top: 20%;
+  font-size: 70px;
   letter-spacing: 8px;
 }
 
-
-.main-text{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 130px;
-    letter-spacing: 20px;
-    font-weight: bold; 
-}
-.jumbotron{
+#land_text2{
   text-align: center;
-  padding-top: 200px;
-  background-color: rgba(0,0,0,0);
-}
-.btn{
-  background: white;
-  color: black;
-  font-family: 'Viga', sans-serif;
-  letter-spacing: 3px;
-}
-.btn-primary:hover{
-	background: #ce001b;
-}
-#frst,#scnd,#thrd{
-  display: none;
+  font-size: 20px;
 }
 
-
-
-
-
-#world { 
-  width: 100%;
-  height: 100%;
-  background-color: #000000; 
-  padding: 0; 
-  margin: 0; 
-  overflow: hidden;
+.btn-lg{
+  display: table;
+  margin: 0px auto;
+  margin-top: 30px;
+  background: #EF5607;
+  border: 1px solid #EF5607;
+  width: 10%;
+  border-radius: 0%; 
 }
+/*layer1 ends*/
 
-.bottomlayer{
-	position: absolute;
-	z-index: 1;
+/*layer2 begins*/
+.layer2{
+  position: relative;
+  background-color: #5EE379;
+  height: 100vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
 }
-.toplayer{
-	position: relative;
-	z-index: 2;
-	color: white;
+/*layer2 ends*/
+
+/*layer3 begins*/
+.layer3{
+  position: relative;
+  background-color: #E8EDF4;
+  height: 100vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
 }
+/*layer3 ends*/
 
-
-   
+/*layer4 begins*/
+.layer4{
+  position: relative;
+  background-color: #FF7D66;
+  height: 100vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
+}
+/*layer4 ends*/
