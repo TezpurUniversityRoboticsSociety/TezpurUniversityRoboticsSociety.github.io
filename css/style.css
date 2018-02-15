@@ -1,11 +1,27 @@
 /*navbar begins */
 .navbar  {
-    background: black;
-    border-bottom: solid 0.1px white;
+  height: 70px;
+  background: transparent; // Transparent initial setting
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+  color: white;
 }
+.navbar.shrink {
+  height: 70px;
+  transition: all ease .5s;
+  background: white; // Change background to white on scroll
+  color: black;
+}
+.navbar.shrink{
+  padding: 10px;
+  transition: all ease .5s;
+  color: black; 
+} 
 .nav-item {
     margin-left: 20px;
-    font-family: 'Dosis', sans-serif;
     letter-spacing: 2.5px;
     transition: 0.5s;
 }
@@ -16,6 +32,9 @@
 /*navbar ends*/
 
 /*layer1 begins*/
+.layer1bg{
+  background-color: #FFAB43;
+}
 .layer1{
   position: relative;
   background-color: #00D3EC;
@@ -24,20 +43,23 @@
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
   font-size: 30%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
 }
-
 #land_text{
   text-align: center;
   padding-top: 20%;
   font-size: 70px;
   letter-spacing: 8px;
 }
-
 #land_text2{
   text-align: center;
   font-size: 20px;
 }
-
 .btn-lg{
   display: table;
   margin: 0px auto;
@@ -50,14 +72,27 @@
 /*layer1 ends*/
 
 /*layer2 begins*/
+.layer2bg{
+  background-color: #E8EDF4;
+}
 .layer2{
   position: relative;
-  background-color: #5EE379;
+  background-color: #FFAB43;
   height: 100vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
   font-size: 30%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
+}
+#text1{
+  padding-top: 5%;
+  text-align: center;
 }
 /*layer2 ends*/
 
@@ -84,3 +119,27 @@
   font-size: 30%;
 }
 /*layer4 ends*/
+
+/*layer5 begins*/
+.layer5{
+  position: relative;
+  background-color: #7A6D6F;
+  height: 100vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
+}
+/*layer5 ends*/
+
+/*layer6 begins*/
+.layer6{
+  position: relative;
+  background-color: #A8ECF9;
+  height: 100vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
+}
+/*layer6 ends*/
