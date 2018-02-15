@@ -87,12 +87,12 @@
 }
 /*navbar ends*/
 .layer1bg{
-  background:white;
+  background: rgb(101, 209, 252);
 }
 /*layer1 begins*/
 .layer1{
   position: relative;
-  background: linear-gradient(to bottom right, #d35b05, #b33270);
+  background: linear-gradient(to bottom right, #f36601, #ff007b);
   height: 100vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
@@ -146,11 +146,11 @@
 
 /*layer2 begins*/
 .layer2bg{
-  background: linear-gradient(to bottom right, #BB3C56, #b33270);
+  background: linear-gradient(to bottom right, #FD1463, #FF017A);
 }
 .layer2{
   position: relative;
-  background-color: white;
+  background-color: rgb(101, 209, 252);
   height: 100vh;
   color: rgb(12, 11, 11);
   font-family: 'Josefin Sans', sans-serif;
