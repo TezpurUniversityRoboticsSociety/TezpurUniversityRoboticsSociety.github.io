@@ -1,3 +1,10 @@
+/*misc begins*/
+.text1{
+  padding-top: 5%;
+  text-align: center;
+}
+/*misc ends*/
+
 /*navbar begins */
 .navbar  {
   height: 70px;
@@ -86,14 +93,21 @@
   }
 }
 /*navbar ends*/
-.layer1bg{
-  background: rgb(101, 209, 252);
-}
+
 /*layer1 begins*/
+#land_img{
+	width: 30%;
+	height: auto;
+	margin-top: -10%;
+	margin-left: 35%;
+}
+.layer1bg{
+  background-color: rgb(101, 209, 252);
+}
 .layer1{
   position: relative;
-  background: linear-gradient(to bottom right, #f36601, #ff007b);
-  height: 100vh;
+  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  height: 110vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
@@ -101,7 +115,7 @@
   clip-path: polygon(
     0 0,
     100% 0,
-    100% 110%,
+    100% 100%,
     0 calc(100% - 5vw)
   );
 }
@@ -110,19 +124,21 @@
   font-family: 'Bungee Inline';
   src: url('./bootstrap/fonts/BungeeInline-Regular.ttf') 
 }
-#turs_text{
+/*#turs_text{
   text-align: center;
   padding-top: 15%;
   font-size: 90px;
   letter-spacing: 5px;
   font-family: 'Bungee Inline';
   font-weight: bolder;
-}
+}*/
 
 #land_text{
   text-align: center;
-  font-size: 50px;
+  padding-top: 0;
+  font-size: 70px;
   letter-spacing: 8px;
+  margin-top: -13%;
 }
 
 #land_text2{
@@ -132,11 +148,12 @@
 .btn-lg{
   display: table;
   margin: 0px auto;
-  margin-top: 10%;
+  margin-top: 3%;
   background: #EF5607;
   border: 1px solid #EF5607;
   width: 10%;
   border-radius: 0%; 
+  color: white;
 }
 .btn-lg:hover{
   background: #EF5607;
@@ -146,7 +163,7 @@
 
 /*layer2 begins*/
 .layer2bg{
-  background: linear-gradient(to bottom right, #FD1463, #FF017A);
+  background: rgb(101, 209, 252);
 }
 .layer2{
   position: relative;
@@ -162,10 +179,6 @@
     100% 100%,
     0 calc(100% - 5vw)
   );
-}
-#text1{
-  padding-top: 5%;
-  text-align: center;
 }
 /*layer2 ends*/
 
@@ -217,6 +230,83 @@
 }
 /*layer6 ends*/
 
-
-
-
+/*layer7 begins*/
+.layer7{
+  position: relative;
+  background-color: #f7f7f7;
+  height: 150vh;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 30%;
+}
+.layer7 .text1{
+	margin-bottom: 2%;
+}
+.txtline{
+  position: relative;
+  text-align: right;
+  float: right;
+  clear: right;
+}
+.txtline:after {
+  content: "";
+  position: absolute;
+  border-top: 2px solid #EF5607;
+  left: 35%;
+  bottom: 0;
+  width: 30%;
+  height: 0px;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    color: black;
+    margin: 10% auto;
+    height: 400px;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .6s ease;
+}
+.card:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+.card:hover {
+    box-shadow: 3px 8px 16px 0 rgba(0,0,0,0.4);
+}
+.icons{
+	margin-top: 40%;
+	text-align: center;
+	font-size: 35px;
+}
+span+span{
+	margin-left: 3%;
+}
+.container {
+    padding: 2px 16px;
+}
+#circle{
+	width: 30%;
+	padding-top: 10%;
+	margin: 1.66%;
+}
+#dp{
+	border-radius: 50%;
+	max-width: 250%;
+	max-height: 250%;
+	margin-left: 36%;
+	margin-top: -15%;
+	margin-bottom: 5%;
+	padding: 5%;
+}
+/*layer7 ends
