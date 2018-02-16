@@ -1,11 +1,13 @@
 $(document).ready(function() {
 	$(window).scroll(function() {
-  	if($(document).scrollTop() > 200) {
-    	$('.navbar').addClass('shrink');
+  	if($(document).scrollTop() > 400) {
+		$('.navbar').addClass('shrink');
+		$('.layer2text').addClass('fadeInUp');
     }
     else {
-    $('.navbar').removeClass('shrink');
-    }
+		$('.navbar').removeClass('shrink');
+		$('.layer2text').removeClass('fadeInUp');
+	}
   });
 });
 

@@ -2,6 +2,7 @@
 .text1{
   padding-top: 5%;
   text-align: center;
+  font-size: 14px;
 }
 /*misc ends*/
 
@@ -20,13 +21,8 @@
   height: 70px;
   transition: all ease .5s;
   /* Change background to white on scroll */
-  background: white; 
+  background: rgb(224, 57, 6); 
 }
-.navbar.shrink{
-  padding: 10px;
-  transition: all ease .5s;
-  color: black; 
-} 
 .nav-item {
     margin-left: 20px;
     letter-spacing: 2.5px;
@@ -34,7 +30,7 @@
     color: black;
 }
 .nav-link {
-  color: black;
+  color: white;
 }
 
 .fill ul li a {
@@ -96,17 +92,19 @@
 
 /*layer1 begins*/
 #land_img{
-	width: 30%;
+	width: 50%;
 	height: auto;
-	margin-top: -10%;
-	margin-left: 35%;
+  margin-top: 4%;
+  margin-left: 25%;
+  margin-bottom: 10%;
+  padding: 100px;
 }
 .layer1bg{
-  background-color: rgb(101, 209, 252);
+  background-color: rgb(250, 246, 0);
 }
 .layer1{
   position: relative;
-  background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+  background: linear-gradient(to bottom right, rgb(3, 252, 157), rgb(17, 0, 255));
   height: 110vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
@@ -119,24 +117,10 @@
     0 calc(100% - 5vw)
   );
 }
-
-@font-face{
-  font-family: 'Bungee Inline';
-  src: url('./bootstrap/fonts/BungeeInline-Regular.ttf') 
-}
-/*#turs_text{
-  text-align: center;
-  padding-top: 15%;
-  font-size: 90px;
-  letter-spacing: 5px;
-  font-family: 'Bungee Inline';
-  font-weight: bolder;
-}*/
-
 #land_text{
   text-align: center;
   padding-top: 0;
-  font-size: 70px;
+  font-size: 40px;
   letter-spacing: 8px;
   margin-top: -13%;
 }
@@ -163,11 +147,11 @@
 
 /*layer2 begins*/
 .layer2bg{
-  background: rgb(101, 209, 252);
+  background: rgb(250, 246, 0);
 }
 .layer2{
   position: relative;
-  background-color: rgb(101, 209, 252);
+  background-color: rgb(250, 246, 0);
   height: 100vh;
   color: rgb(12, 11, 11);
   font-family: 'Josefin Sans', sans-serif;
@@ -180,6 +164,17 @@
     0 calc(100% - 5vw)
   );
 }
+.layer2bg .main-text {
+  font-size: 30px;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  margin-left: 40%;
+  align-content: center;
+}
+.layer2bg .container{
+  font-size: 20px;
+}
+
 /*layer2 ends*/
 
 /*layer3 begins*/
@@ -240,14 +235,11 @@
   font-weight: bolder;
   font-size: 30%;
 }
+.team-txt{
+  font-family:'Josefin Sans', sans-serif;
+}
 .layer7 .text1{
 	margin-bottom: 2%;
-}
-.txtline{
-  position: relative;
-  text-align: right;
-  float: right;
-  clear: right;
 }
 .txtline:after {
   content: "";
