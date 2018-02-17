@@ -224,7 +224,7 @@
 .layer5{
   position: relative;
   background-color: #f7f7f7;
-  height: auto;
+  height: 550vh;
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
@@ -232,18 +232,21 @@
 }
 .team-txt{
   font-family:'Josefin Sans', sans-serif;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+.team-txt:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid red;
 }
 .layer5 .text1{
 	margin-bottom: 2%;
-}
-.txtline:after {
-  content: "";
-  position: absolute;
-  border-top: 2px solid #EF5607;
-  left: 35%;
-  bottom: 0;
-  width: 30%;
-  height: 0px;
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -295,5 +298,15 @@ span+span{
 	margin-top: -15%;
 	margin-bottom: 5%;
 	padding: 5%;
+}
+#lsttxt{
+  font-size: 12px;
+  margin-left: 47.5%;
+  margin-top: 7%;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+}
+.fa-heart{
+  color: #E90606;
 }
 /*layer7 ends
