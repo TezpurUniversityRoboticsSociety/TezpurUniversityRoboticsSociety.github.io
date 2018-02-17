@@ -13,6 +13,7 @@
   background: transparent; 
   display: block;
   position : fixed;
+  max-height:60px !important;
   width: 100%;
   z-index: 99999;
   transition: all ease .5s;
@@ -22,7 +23,7 @@
   transition: all ease .5s;
   /* Change background to white on scroll */
   background: white;
-  border-bottom: 1px solid black; 
+  border-bottom: 1px solid black;
 }
 .nav-item {
     margin-left: 20px;
@@ -30,7 +31,10 @@
     transition: 0.5s;
     color: black;
 }
-.nav-link {
+.navlinkcol1{
+  color: white;
+}
+.navlinkcol2{
   color: black;
 }
 
@@ -103,7 +107,7 @@
 }
 .layer1{
   position: relative;
-  background: linear-gradient(to bottom right, rgb(3, 252, 157), rgb(17, 0, 255));
+  background: linear-gradient(to bottom right, rgb(252, 3, 3), rgb(8, 8, 8));
   height: 110vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
