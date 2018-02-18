@@ -8,10 +8,17 @@ $(document).ready(function() {
     }
     else {
 		$('.navbar').removeClass('shrink');
-		$('.layer2text').removeClass('fadeInUp');
-
 		$('.nav-link').addClass('navlinkcol1');
 		$('.nav-link').removeClass('navlinkcol2');
+	}
+
+	if($(document).scrollTop()>2700){
+		$('.left').addClass('fadeInLeft');
+		$('.right').addClass('fadeInRight');
+	}
+	else{
+		$('.left').removeClass('fadeInLeft');
+		$('.right').removeClass('fadeInRight');
 	}
   });
 });
