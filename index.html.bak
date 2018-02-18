@@ -17,11 +17,7 @@
    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto|Short+Stack" rel="stylesheet">
  
 
-
-	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
-	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
-	<script type="text/javascript" src="engine0/jquery.js"></script>
-	<!-- End WOWSlider.com HEAD section --></head>
+</head>
 <body>
     
     <a href="top"></a>
@@ -90,26 +86,6 @@
                 We strive for the advancement of the theory and practice of robotics and automation engineering, science and 
                 technology and for the maintenance of high professional standards among its members. Society aids in promoting close co-operation and exchange of technical information among its members and to this end holds collaborative programs with industry, research centers, and educational institutes through workshops, seminars, class room training, exchange program etc.
                 </p>
-                <br><br>
-	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
-	<div id="wowslider-container0">
-	<div class="ws_images"><ul>
-		<li><img src="data0/images/img1.jpg" alt="Workshop in process" title="Workshop in process" id="wows0_0"/></li>
-		<li><img src="data0/images/img3.jpg" alt="Lecture in process" title="Lecture in process" id="wows0_1"/></li>
-		<li><a href="http://wowslider.net"><img src="data0/images/img4.jpg" alt="javascript slider" title="Faculty delivering his lecture" id="wows0_2"/></a></li>
-		<li><img src="data0/images/img.jpg" alt="Members in TURS" title="Members in TURS" id="wows0_3"/></li>
-	</ul></div>
-	<div class="ws_bullets"><div>
-		<a href="#" title="Workshop in process"><span><img src="data0/tooltips/img1.jpg" alt="Workshop in process"/>1</span></a>
-		<a href="#" title="Lecture in process"><span><img src="data0/tooltips/img3.jpg" alt="Lecture in process"/>2</span></a>
-		<a href="#" title="Faculty delivering his lecture"><span><img src="data0/tooltips/img4.jpg" alt="Faculty delivering his lecture"/>3</span></a>
-		<a href="#" title="Members in TURS"><span><img src="data0/tooltips/img.jpg" alt="Members in TURS"/>4</span></a>
-	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">carousel jquery</a> by WOWSlider.com v8.8</div>
-	<div class="ws_shadow"></div>
-	</div>	
-	<script type="text/javascript" src="engine0/wowslider.js"></script>
-	<script type="text/javascript" src="engine0/script.js"></script>
-	<!-- End WOWSlider.com BODY section -->
             </div>
         </div>
     </div>
