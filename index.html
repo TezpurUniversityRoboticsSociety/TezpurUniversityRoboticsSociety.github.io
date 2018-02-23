@@ -14,7 +14,12 @@
 
     <!-- Custom -->
     <link rel="stylesheet" href="css/style.css">
-   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto|Short+Stack" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto|Short+Stack" rel="stylesheet">
+
+    <!-- Angular Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/MemberController.js"></script>
  
 
 
@@ -22,7 +27,7 @@
 	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
 	<script type="text/javascript" src="engine0/jquery.js"></script>
 	<!-- End WOWSlider.com HEAD section --></head>
-<body>
+<body ng-app="myApp">
     
     <a href="top"></a>
 
@@ -145,489 +150,105 @@
     </div>
     <!-- layer4 ends here -->
 
+
+
+
     <!-- layer5 begins here -->
     <div id="team" class="layer5">
     <!-- Office bearer's -->
         <div class="text1">
             <h1 class="team-txt">Core Team</h1>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card zeror-left animated">
-                        <div id="circle">
-                            <img id ="dp" src="./img/NAYAN.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="http://agnigarh.tezu.ernet.in/~nkakoty/" target="_blank"><i class="icon fa fa-external-link" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="mailto:nkakoty@tezu.ernet.in" target="_blank"><i class="fa fa-envelope-open" style="color:white" aria-hidden="true"></i></a></span>
+        </div>   
+
+        <!-- ********************************* -->
+        <!-- ********* Member's ************** -->
+        <!-- ********************************* -->
+        <div ng-controller="MemberController">
+            <div class="container">
+                <div class="row">
+                    <!-- ************************************ -->
+                    <!-- First Loop for core teacher's Members-->
+                    <!-- ************************************ -->
+                    <div class="col-md-4" ng-repeat="Teacher in coreTeamTeachers"> 
+                        <div class="card {{ Teacher.cardClass }}">
+                            <div id="circle">
+                                <img id ="dp" src="{{ Teacher.img }}">
                             </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Dr. Nayan Moni Kakati</b></h4> 
-                            <p>President</p> 
+                            <div class="overlay">
+                                <div class="icons">
+                                    <span><a href="{{ Teacher.link }}" target="_blank"><i class="icon fa fa-external-link" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ Teacher.mail }}" target="_blank"><i class="fa fa-envelope-open" style="color:white" aria-hidden="true"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="container text1">
+                                <h4><b>{{ Teacher.name }}</b></h4> 
+                                <p>{{ Teacher.desig }}</p> 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card zeror-middle animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/RIKU.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="http://agnigarh.tezu.ernet.in/~riku/" target="_blank"><i class="icon fa fa-external-link" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="mailto:riku@tezu.ernet.in" target="_blank"><i class="fa fa-envelope-open" style="color:white" aria-hidden="true"></i></a></span>
+                    <!-- ************************** -->
+                    <!-- Core Student Team member's -->
+                    <!-- ************************** -->
+                    <div class="col-lg-4" ng-repeat="student in coreStudentMembers">
+                        <div class="card {{ student.cardClass }}">
+                            <div id="circle">
+                                <img id ="dp" src="{{ student.img }}">
                             </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Dr. Riku Chutia</b></h4> 
-                            <p>Vice President</p> 
+                            <div class="overlay">
+                                <div class="icons">
+                                    <span><a href="{{ student.github }}" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ student.linkedin }}" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ student.facebook }}" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="container text1">
+                                <h4><b>{{ student.name }}</b></h4> 
+                                <p>{{ student.name }}</p> 
+                            </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-lg-4">
-                    <div class="card zeror-right animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/ZK.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="http://www.tezu.ernet.in/dmech/people/zk.htm" target="_blank"><i class="icon fa fa-external-link" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="malito:zk@tezu.ernet.in" target="_blank"><i class="fa fa-envelope-open" style="color:white" aria-hidden="true"></i></a></span>
+            </div>
+
+
+
+            <div class="text1" >
+                    <h1 class="team-txt">Web Team</h1>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4" ng-repeat="member in webTeam">
+                        <div class="card">
+                            <div id="circle">
+                                <img id ="dp" src="{{ member.img }}">
+                            </div>	
+                            <div class="overlay">
+                                <div class="icons">
+                                    <span><a href="{{ member.github }}" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ member.facebook }}" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Ms. Zahnupriya Kalita</b></h4> 
-                            <p>Vice President</p> 
+                            <div class="container text1">
+                                <h4><b>{{ member.name }}</b></h4> 
+                                <p>{{ member.desig }}</p> 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
-         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card firstr-left animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/ZB.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="http://agnigarh.tezu.ernet.in/~zubin/index.html" target="_blank"><i class="icon fa fa-external-link" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="mailto:zubin@tezu.ernet.in" target="_blank"><i class="fa fa-envelope-open" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Mr. Zubeen Bhuyan</b></h4> 
-                            <p>Technical Team Director</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card firstr-middle animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/RajatSharma.jpg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/rajatsharma369007" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/rajat-sharma-1144a1119/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/profile.php?id=100002977450437" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Rajat Sharma</b></h4> 
-                            <p>Student Vice President</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card firstr-right animated ">
-                        <div id="circle">
-                            <img id ="dp" src="">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/rajatsharma369007" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/rajat-sharma-1144a1119/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/profile.php?id=100002977450437" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Nabarun Barman</b></h4> 
-                            <p>Secretary</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card secondr-left animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/DhrubaJyotiSut.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="#" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="#" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/dhrubajyoti.sut.3" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Dhruba Jyoti Sut</b></h4> 
-                            <p>Joint Secretary</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card secondr-middle animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/DevangaBorah.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="#" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="#" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="#" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Devanga Borah</b></h4> 
-                            <p>Treasurer</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card secondr-right animated ">
-                        <div id="circle">
-                            <img id ="dp" src="https://avatars2.githubusercontent.com/u/35569202?s=400&v=4">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/sourishsarmah" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/sourish.sarmah" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Sourish Sarmah</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card thirdr-left animated ">
-                        <div id="circle">
-                            <img id ="dp" src="https://avatars0.githubusercontent.com/u/26831659?s=460&v=4">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/nityanandagohain" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/nityananda-gohain/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/nityanandagohain" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Nityananda Gohain</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card thirdr-middle animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/KanishkaChowdhury.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/CKanishka" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/kanishkachowdhury" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/kanishka.chowdhury.54" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Kanishka Chowdhury</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card thirdr-right animated ">
-                        <div id="circle">
-                            <img id ="dp" src="">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/nityanandagohain" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/nityananda-gohain/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/nityanandagohain" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Abhiroop Dutta</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card fourthr-left animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/AdilBinBhutto.jpg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/binbhutto" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/adil-b-686739b3/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/adil4bhutto" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Adil Bin Bhutto</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card fourthr-middle animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/ManojSharma.png">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/manojsharma221" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/manoj-sharma-6b59b9155/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/ms9954098610" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Manoj Sharma</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card fourthr-right animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/BiswajitBharali.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/nityanandagohain" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/nityananda-gohain/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/nityanandagohain" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Biswajit Bharali</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card fifthr-left animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/SaurabhKannaujia.jpg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/imonstershadow" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/saurabh-kannaujia-9b5418159" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/saurabh.kannaujia.9" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Saurabh Kannaujia</b></h4> 
-                            <p>Technical Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card fifthr-middle animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/Prateeksaikia.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/Prateekj7" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="#" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://m.facebook.com/profile.php?id=100001788514377&ref=content_filter" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Prateek Saikia</b></h4> 
-                            <p>Event Co-ordinating Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card fifthr-right animated ">
-                        <div id="circle">
-                            <img id ="dp" src="./img/SANDEEPSARKAR.png">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="mutant.sandeep@gmail.com" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Sandeep Sarkar</b></h4> 
-                            <p>Event Co-ordinating Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div id="circle">
-                            <img id ="dp" src="./img/DeepankarAcharya.jpeg">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/AegisThunderbolt" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/deepankar-acharyya-034053a5/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/deepankar.acharyya" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Deepankar Acharya</b></h4> 
-                            <p>Event Co-ordinating Team Member</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- Maintainer's -->
-        <div class="text1" >
-            <h1 class="team-txt">Web Team</h1>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div id="circle">
-                            <img id ="dp" src="https://avatars3.githubusercontent.com/u/32612696?s=400&u=1a2392549eb9f62ea19ca37ae6864e0681efd745&v=4">
-                        </div>	
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/AdirthaBorgohain" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/EccentricityUnparalleled?ref=br_rs" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Adirtha Borgohain</b></h4> 
-                            <p>Quizzer & Developer</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div id="circle">
-                            <img id ="dp" src="https://avatars0.githubusercontent.com/u/26831659?s=460&v=4">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/nityanandagohain" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.linkedin.com/in/nityananda-gohain/" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/nityanandagohain" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Nityananda Gohain</b></h4> 
-                            <p>Developer @ FOSSASIA</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div id="circle">
-                            <img id ="dp" src="https://avatars2.githubusercontent.com/u/35569202?s=400&v=4">
-                        </div>
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/sourishsarmah" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/sourish.sarmah" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Sourish Sarmah</b></h4> 
-                            <p>Backend Developer</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-            	<div class="col-lg-4">
-            		
-            	</div>
-                <div class="col-lg-4">
-                    <div class="card animated">
-                        <div id="circle">
-                            <img id ="dp" src="https://avatars0.githubusercontent.com/u/36163817?s=460&v=4">
-                        </div>	
-                        <div class="overlay">
-                            <div class="icons">
-                                <span><a href="https://github.com/debasishkalita" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
-                                <span><a href="https://www.facebook.com/debasishkalita.kalita" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
-                            </div>
-                        </div>
-                        <div class="container text1">
-                            <h4><b>Debasish Kalita</b></h4> 
-                            <p>Developer</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-            		
-            	</div>
-    		</div>
-    	</div>
     	<h4 id="lsttxt">Made with <i class="fa fa-heart" aria-hidden="true"></i> in <strong>TU</strong></h4>
     </div>
-
-
     <!-- layer5 ends here -->
 
     <!-- Scripts -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="js/animation-main.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -636,6 +257,5 @@
     <script src="https://use.fontawesome.com/4d6156a8c1.js"></script>  
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="style.js"></script>
 </body>
 </html>
