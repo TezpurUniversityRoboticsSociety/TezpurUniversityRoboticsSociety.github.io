@@ -215,17 +215,13 @@
   margin-top: 2%;
   font-weight: 400;
 }
-.layer3 .wrapper{
-  margin-left: 40%;
-  margin-bottom: 70%;
-}
 /*layer3 ends*/
 
 /*layer4 begins*/
 .layer4{
   position: relative;
   background: linear-gradient(to bottom right, #ee0979, #ff6a00);
-  height: 110vh;
+  height: auto;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: 100%;
@@ -251,7 +247,7 @@
 .layer5{
   position: relative;
   background-color: #f7f7f7;
-  height: 550vh;
+  height: auto;
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
@@ -281,7 +277,7 @@
     width: 100%;
     color: black;
     margin: 10% auto;
-    height: 400px;
+    height: 350px;
 }
 .overlay {
   position: absolute;
@@ -376,4 +372,9 @@ span+span{
     .parallax.enhanced,
     .parallax.enhanced:first-child {
       background:none;
+}
+.footer {
+  position: relative;
+  height: auto;
+  background-color: black;
 }

@@ -63,7 +63,7 @@ $(document).ready(function() {
 		}
 
 	// Fourth Row
-		if($(document).scrollTop()>4300){
+		if($(document).scrollTop()>4400){
 			$('.fourthr-left').addClass('fadeInLeft');
 			$('.fourthr-right').addClass('fadeInRight');
 			$('.fourthr-middle').addClass('fadeInUp')
@@ -75,7 +75,7 @@ $(document).ready(function() {
 		}
 
 	// Fifth row
-		if($(document).scrollTop()>4600){
+		if($(document).scrollTop()>4900){
 			$('.fifthr-left').addClass('fadeInLeft');
 			$('.fifthr-right').addClass('fadeInRight');
 			$('.fifthr-middle').addClass('fadeInUp')

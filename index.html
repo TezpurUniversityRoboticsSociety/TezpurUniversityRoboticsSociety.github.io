@@ -139,12 +139,6 @@
                 and other robotic activities of interest.
             </p>
         </div>
-         <div class="wrapper">
-                <div class="example text">
-                <a href="#" class="parallax" data-imgname="2.png" data-levels="8" data-space="30"></a>
-                <a href="#" class="parallax" data-imgname="1.png" data-levels="8" data-space="30"></a>
-                </div>
-            </div>
     </div>
     <!-- layer3 ends here -->
 
@@ -159,7 +153,7 @@
 		            <ul class="timeline timeline-centered">
 		                <li class="timeline-item">
 		                    <div class="timeline-info b_text">
-		                        <span>March 12, 2016</span>
+		                        <span>March 12, 2018</span>
 		                    </div>
 		                    <div class="timeline-marker"></div>
 		                    <div class="timeline-content">
@@ -170,7 +164,7 @@
 		                </li>
 		                <li class="timeline-item">
 		                    <div class="timeline-info b_text">
-		                        <span>March 23, 2016</span>
+		                        <span>March 23, 2018</span>
 		                    </div>
 		                    <div class="timeline-marker"></div>
 		                    <div class="timeline-content">
@@ -188,7 +182,7 @@
 		                </li>
 		                <li class="timeline-item">
 		                    <div class="timeline-info b_text">
-		                        <span>April 02, 2016</span>
+		                        <span>April 02, 2018</span>
 		                    </div>
 		                    <div class="timeline-marker"></div>
 		                    <div class="timeline-content">
@@ -199,7 +193,7 @@
 		                </li>
 		                <li class="timeline-item">
 		                    <div class="timeline-info b_text">
-		                        <span>April 28, 2016</span>
+		                        <span>April 28, 2018</span>
 		                    </div>
 		                    <div class="timeline-marker"></div>
 		                    <div class="timeline-content">
@@ -234,7 +228,7 @@
                     <!-- ************************************ -->
                     <!-- First Loop for core teacher's Members-->
                     <!-- ************************************ -->
-                    <div class="col-md-4" ng-repeat="Teacher in coreTeamTeachers"> 
+                    <div class="col-md-3 col-sm-6 " ng-repeat="Teacher in coreTeamTeachers"> 
                         <div class="card {{ Teacher.cardClass }}">
                             <div id="circle">
                                 <img id ="dp" src="{{ Teacher.img }}">
@@ -246,7 +240,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4><b>{{ Teacher.name }}</b></h4> 
+                                <h4>{{ Teacher.name }}</h4> 
                                 <p>{{ Teacher.desig }}</p> 
                             </div>
                         </div>
@@ -254,7 +248,7 @@
                     <!-- ************************** -->
                     <!-- Core Student Team member's -->
                     <!-- ************************** -->
-                    <div class="col-lg-4" ng-repeat="student in coreStudentMembers">
+                    <div class="col-md-3 col-sm-6" ng-repeat="student in coreStudentMembers">
                         <div class="card {{ student.cardClass }}">
                             <div id="circle">
                                 <img id ="dp" src="{{ student.img }}">
@@ -267,8 +261,8 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4><b>{{ student.name }}</b></h4> 
-                                <p>{{ student.name }}</p> 
+                                <h4>{{ student.name }}</h4> 
+                                <p>{{ student.desig }}</p> 
                             </div>
                         </div>
                     </div>
@@ -276,16 +270,17 @@
                 </div>
             </div>
 
-
-
+            <!-- ************************** -->
+            <!-- ********Web Team********** -->
+            <!-- ************************** -->
             <div class="text1" >
                     <h1 class="team-txt">Web Team</h1>
             </div>
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4" ng-repeat="member in webTeam">
-                        <div class="card">
+                    <div class="col-md-3 col-sm-6" ng-repeat="member in webTeam">
+                        <div class="card {{ member.cardClass }}">
                             <div id="circle">
                                 <img id ="dp" src="{{ member.img }}">
                             </div>	
@@ -297,7 +292,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4><b>{{ member.name }}</b></h4> 
+                                <h4>{{ member.name }}</h4> 
                                 <p>{{ member.desig }}</p> 
                             </div>
                         </div>
@@ -306,11 +301,15 @@
             </div>
 
         </div>
-
-
-    	<h4 id="lsttxt">Made with <i class="fa fa-heart" aria-hidden="true"></i> in <strong>TU</strong></h4>
     </div>
     <!-- layer5 ends here -->
+
+    <!-- ***************** -->
+    <!-- *****Footer****** -->
+    <!-- ***************** -->
+    <div class="footer">
+        <h4 id="lsttxt">Made with <i class="fa fa-heart" aria-hidden="true"></i> in <strong>TU</strong></h4>
+    </div>
 
     <!-- Scripts -->
     
