@@ -184,7 +184,7 @@ app.controller('MemberController', ["$scope", function($scope){
             img: "https://avatars3.githubusercontent.com/u/32612696?s=400&u=1a2392549eb9f62ea19ca37ae6864e0681efd745&v=4",
             github: "https://github.com/AdirthaBorgohain",
             facebook: "https://www.facebook.com/EccentricityUnparalleled?ref=br_rs",
-            linkedin: "",
+            linkedin: "https://www.linkedin.com/in/adirtha-borgohain-510402131",
             cardClass: ""
         },
         {

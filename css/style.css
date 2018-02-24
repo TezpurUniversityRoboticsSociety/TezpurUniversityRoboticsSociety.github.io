@@ -167,7 +167,6 @@
   height: auto;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: bolder;
   font-size: 40%;
   clip-path: polygon(
     0 -10%,
@@ -194,7 +193,7 @@
 .layer3{
   position: relative;
   background-color:#ffffff;
-  height: auto;
+  height: 110vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
@@ -204,16 +203,21 @@
 .layer3 .main-text2 {
   font-size: 30px;
   padding-top: 5%;
-  padding-bottom: 3%;
+  
   margin-left: 45%;
   align-content: center;
   color:black;
-
 }
 .layer3 .container{
   font-size: 19px;
   color:#262426;
-  font-family: 'Short Stack', cursive;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 2%;
+  font-weight: 400;
+}
+.layer3 .wrapper{
+  margin-left: 40%;
+  margin-bottom: 70%;
 }
 /*layer3 ends*/
 
@@ -221,13 +225,23 @@
 .layer4{
   position: relative;
   background: linear-gradient(to bottom right, #ee0979, #ff6a00);
-  height: 100vh;
+  height: 110vh;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: bolder;
-  font-size: 30%;
+  font-weight: 400;
+  font-size: 100%;
+  color: #f4f4f4;
+  margin-top: 3%;
 }
-.layer4 .wrapper{
-  padding-left: 32%;
+.tline_text{
+  margin-left: 17%;
+  font-family: 'Roboto', sans-serif;
+}
+.b_text{
+  font-weight: 600;
+  color: white;
+}
+.example-title{
+  margin-top: 2%;
 }
 /*layer4 ends*/
 
