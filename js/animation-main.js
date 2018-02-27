@@ -13,6 +13,11 @@ $(document).ready(function() {
 			$('.nav-link').addClass('navlinkcol1');
 			$('.nav-link').removeClass('navlinkcol2');
 		}
+
+	// Objetives
+		if($(document).scrollTop()> 1300){
+			$('.layer3-text').addClass('fadeInUp');
+		}
 	
 	// zero Row
 		if($(document).scrollTop()>2900){
