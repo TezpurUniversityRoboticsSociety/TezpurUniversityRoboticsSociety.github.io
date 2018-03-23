@@ -189,7 +189,7 @@ app.controller('MemberController', ["$scope", function($scope){
         },
         {
             name: "Nityananda Gohain",
-            desig: "Developer @ FOSSASIA",
+            desig: "FOSS dev",
             img: "https://avatars0.githubusercontent.com/u/26831659?s=460&v=4",
             github: "https://github.com/nityanandagohain",
             facebook: "https://www.facebook.com/nityanandagohain",

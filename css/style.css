@@ -2,7 +2,7 @@
 .text1{
   padding-top: 5%;
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
 }
 /*misc ends*/
 
@@ -274,10 +274,10 @@
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 100%;
+    width: 90%;
     color: black;
     margin: 10% auto;
-    height: 350px;
+    height: 300px;
 }
 .overlay {
   position: absolute;
@@ -377,4 +377,8 @@ span+span{
   position: relative;
   height: auto;
   background-color: black;
+}
+
+.removed{
+  display: none;
 }
