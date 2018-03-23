@@ -376,7 +376,7 @@ span+span{
 .footer {
   position: relative;
   height: auto;
-  background-color: black;
+  color: rgb(53, 54, 56);
 }
 
 .removed{
