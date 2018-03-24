@@ -60,3 +60,6 @@ hr.style-two {
 .btn:hover{
 	background-color: rgb(137, 0, 0);
 }
+.btn-primary:not(:disabled):not(.disabled):active{
+	background-color: black;
+}
