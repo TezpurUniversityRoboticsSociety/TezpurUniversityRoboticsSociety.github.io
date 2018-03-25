@@ -1,27 +1,33 @@
+/*background*/
 body{
 	background: url(https://images.vexels.com/media/users/3/78415/raw/15c091960ee22711a9cc122c9e23821d-fundo-do-teste-padr-o-do-hex-gono-linear.jpg);
+	background-size: 100%;
 }
+/*registration title header*/
 h4{
 	letter-spacing: 3px;
   	font-family: 'Alegreya Sans SC', sans-serif;
   	text-align: center;
-  	padding: 40px;
+  	padding: 4%;
   	color: #D10000;
   	font-size: 150%;
 }
+/*main header*/
 h2{
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 	font-size: 300%;
 	color: white;
 }
+/*line below title*/
 hr.style-two {
     border: 0;
-    height: 1px;
+    height: 1%;
     background-image: linear-gradient(to right, rgba(209, 0, 0, 0), rgba(209, 0, 0, 0.75), rgba(209, 0, 0, 0));
     width: 30%;
-    padding-top: 1px;
+    padding-top: 0.2%;
 }
+/*card starts here*/
 .card {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -31,31 +37,55 @@ hr.style-two {
 }
 .card h4{
 	color: white;
-	font-size: 20px;
+	font-size: 120%;
 	text-align: left;
 }
-
 /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 /* Add some padding inside the card container */
 .card .container {
     padding: 2px 16px;
 }
+b{
+	border-bottom: 2px solid #D10000;
+	padding-bottom: 5px;
+}
+form{
+	padding-left: 4%;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 150%;
+}
+input{
+	height: 80%;
+	margin-top: 1%;
+}
+/*input boxes*/
+.form-control{
+	width: 80%;
+	border-radius: 1%;
+	display: inline;
+}
+#selectGender{
+	width: 20%;
+	margin: 1% 0 0 0;
+}
+/*register button starts*/
 .btn{
 	background-color: #a50101; 
 	border: 0;
 	border-radius: 0%;
 	width: 50%;
 	position: relative;
-	left: 24%;
+	left: 27%;
 	margin-bottom: 5%;
 	letter-spacing: 4px;
 	font-size: 100%;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	height: 60px;
+	margin-top: 2%;
 }
 .btn:hover{
 	background-color: rgb(137, 0, 0);
@@ -63,3 +93,5 @@ hr.style-two {
 .btn-primary:not(:disabled):not(.disabled):active{
 	background-color: black;
 }
+/*register button ends*/
+/*card ends here*/
