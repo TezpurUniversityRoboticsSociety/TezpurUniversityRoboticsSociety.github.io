@@ -1,7 +1,9 @@
 /*background*/
 body{
-	background: url(https://images.vexels.com/media/users/3/78415/raw/15c091960ee22711a9cc122c9e23821d-fundo-do-teste-padr-o-do-hex-gono-linear.jpg);
-	background-size: 100%;
+	background-image: url('../img/Black.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 /*registration title header*/
 h4{
@@ -69,7 +71,7 @@ input{
 	display: inline;
 }
 #selectGender{
-	width: 20%;
+	width: 40%;
 	margin: 1% 0 0 0;
 }
 /*register button starts*/
