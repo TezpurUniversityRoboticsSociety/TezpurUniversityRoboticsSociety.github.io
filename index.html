@@ -29,6 +29,9 @@
 	<!-- Start Slideshow HEAD section -->
 	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
 	<script type="text/javascript" src="engine0/jquery.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 	<!-- End Slideshow HEAD section --></head>
 <body ng-app="myApp">
     
@@ -78,7 +81,7 @@
             <div class="container">
                 <img id="land_img" src="./img/TURS.png">
             </div>
-            <h1 id="land_text"><span class="animated fadeIn">BUILD. </span><strong class="animated fadeIn" id="ani2">CREATE.</strong> <span class="animated fadeIn" id="ani3">LEARN.</span></h1>
+            <h1 id="land_text"><span class="animated fadeIn build">BUILD. </span><strong class="animated fadeIn build" id="ani2">CREATE.</strong> <span class="animated fadeIn build" id="ani3">LEARN.</span></h1>
             <h3 id="land_text2">Tezpur University's student led robotics club aimed at creating waves in the field of robotics.</h3>
             <button type="button" class="btn btn-primary btn-lg animated">Explore</button>
         </div>
@@ -242,7 +245,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4>{{ Teacher.name }}</h4> 
+                                <h4 class="teachername"><strong>{{ Teacher.name }}</strong></h4> 
                                 <p>{{ Teacher.desig }}</p> 
                             </div>
                         </div>
@@ -263,7 +266,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4>{{ student.name }}</h4> 
+                                <h4 class ="studentname"><strong>{{ student.name }}</strong></h4> 
                                 <p>{{ student.desig }}</p> 
                             </div>
                         </div>
@@ -294,7 +297,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4>{{ member.name }}</h4> 
+                                <h4 class="member"><strong>{{ member.name }}</strong></h4> 
                                 <p>{{ member.desig }}</p> 
                             </div>
                         </div>
