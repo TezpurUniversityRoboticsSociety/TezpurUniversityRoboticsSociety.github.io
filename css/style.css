@@ -5,40 +5,6 @@
   font-size: 11px;
 }
 /*misc ends*/
-
-/*navbar begins */
-.navbar  {
-  height: 70px;
-  font-size: 120%;
-  /* Transparent initial setting */
-  background: transparent; 
-  display: block;
-  position : fixed;
-  max-height:80px !important;
-  width: 100%;
-  z-index: 99999;
-  transition: all ease .5s;
-}
-.navbar.shrink {
-  height: 70px;
-  transition: all ease .5s;
-  /* Change background to white on scroll */
-  background: white;
-  border-bottom: 1px solid black;
-}
-.nav-item {
-    margin-left: 20px;
-    letter-spacing: 2.5px;
-    transition: 0.5s;
-    color: black;
-}
-.navlinkcol1{
-  color: white;
-}
-.navlinkcol2{
-  color: black;
-}
-
 .fill ul li a {
   position: relative;
 }
@@ -404,4 +370,122 @@ span+span{
 
 .removed{
   display: none;
+}
+@media screen and (max-width: 768px)
+  {
+
+    .teachername
+    {
+      font-size: 15px;
+    }
+    .studentname
+    {
+      font-size:15px;
+    }
+    .member
+    {
+      font-size:15px;
+    }
+    .nav-link
+    {
+      color: white;
+    }
+    .navbar-light
+    {
+      background: #A11111;
+    }
+   .nav-item {
+      text-align: center;
+      padding-right: 15px;
+      font-color: white;
+  }
+  .build
+  {
+    font-size: 35px;
+  }
+  #land_text2
+  {
+    padding: 17px;
+    font-size: 15px;
+  }
+  .btn-lg{
+  display: table;
+  margin: 0px auto; 
+  background: rgba(0,0,0,0);
+  border: 2px solid #FFFFFF;
+  width: 40%;  
+  height: 7%;
+  border-radius: 0%; 
+  color: white;
+}
+#lsttxt{
+  font-size: 12px;
+  margin-left: 35.5%;
+  margin-top: 7%;
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+}
+.layer3 .main-text2 {
+  font-size: 30px;
+  padding-top: 5%;
+  
+  margin-left: 30%;
+  align-content: center;
+  color:black;
+}
+.layer3{
+  position: relative;
+  background-color:#ffffff;
+  height: 146vh;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 40%;
+  padding-bottom: 40px;
+}
+.container {
+    padding: 2px 42px;
+}
+
+.text1{
+  padding-top: 2%;
+  text-align: center;
+  font-size: 11px;
+}
+
+}
+@media only screen and (min-width: 1024px)
+{
+    .navbar  {
+      height: 70px;
+      font-size: 120%;     
+      background: transparent; 
+      display: block;
+      position : fixed;
+      max-height:80px !important;
+      width: 100%;
+      z-index: 99999;
+      transition: all ease .5s;
+    }
+    .navbar.shrink {
+      height: 70px;
+      transition: all ease .5s;
+      
+      background: white;
+      border-bottom: 1px solid black;
+    }
+    .nav-item {
+        margin-left: 20px;
+        letter-spacing: 2.5px;
+        transition: 0.5s;
+        color: black;
+        
+    }
+    .navlinkcol1{
+      color: white;
+    }
+    .navlinkcol2{
+      color: black;
+    }
+
 }
