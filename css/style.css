@@ -452,7 +452,12 @@ span+span{
   text-align: center;
   font-size: 11px;
 }
-
+#land_img{
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-left:0%;
+}
 }
 @media only screen and (min-width: 1024px)
 {

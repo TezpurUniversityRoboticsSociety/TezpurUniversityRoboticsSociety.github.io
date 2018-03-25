@@ -97,3 +97,19 @@ input{
 }
 /*register button ends*/
 /*card ends here*/
+
+/*mobile compatibility*/
+@media screen and (max-width: 768px)
+{
+	.form-control
+	{
+	width: 80%;
+	border-radius: 1%;
+	display: inline;
+    }
+#selectGender
+    {
+	width: 60%;
+	margin: 1% 0 0 0;
+	}
+}
