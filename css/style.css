@@ -9,11 +9,12 @@
 /*navbar begins */
 .navbar  {
   height: 70px;
+  font-size: 120%;
   /* Transparent initial setting */
   background: transparent; 
   display: block;
   position : fixed;
-  max-height:60px !important;
+  max-height:80px !important;
   width: 100%;
   z-index: 99999;
   transition: all ease .5s;
@@ -97,10 +98,10 @@
 
 /*layer1 begins*/
 #land_img{
-	width: 45%;
+	width: 55%;
 	height: auto;
   margin-top: 10%;
-  margin-left: 28%;
+  margin-left: 21.5%;
 }
 .layer1bg{
   background-image: linear-gradient(-120deg, #ff5858 0%, #f09819 100%);
@@ -123,14 +124,14 @@
 #land_text{
   text-align: center;
   padding-top: 0;
-  font-size: 50px;
+  font-size: 80px;
   letter-spacing: 8px;
   margin-top: 3%;
 }
 
 #land_text2{
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 #ani2{
   -webkit-animation-delay: 0.75s;
@@ -144,15 +145,17 @@
   display: table;
   margin: 0px auto;
   margin-top: 3%;
-  background: #C4000D;
-  border: 1px solid #C4000D;
+  background: rgba(0,0,0,0);
+  border: 2px solid #FFFFFF;
   width: 10%;
+  height: 5%;
   border-radius: 0%; 
   color: white;
 }
 .btn-lg:hover{
-  background: #ad000b;
+  background: #FFFFFF;
   border: 1px solid #ad000b;
+  color: black;
 }
 /*layer1 ends*/
 
@@ -176,14 +179,33 @@
   );
 }
 .layer2bg .main-text {
-  font-size: 30px;
+  font-size: 20px;
   padding-top: 5%;
-  padding-bottom: 4%;
-  margin-left: 40%;
+  padding-bottom: 0.5%;
+  text-align: center;
   align-content: center;
+  letter-spacing: 3px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+#sub-text{
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 70px;
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    width: 30%;
 }
 .layer2bg .container{
   font-size: 20px;
+  color: black;
+}
+.layer2text p{
+  padding-top: 5%;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
 
