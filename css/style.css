@@ -75,7 +75,7 @@
 .layer1{
   position: relative;
   background: linear-gradient(to bottom right, rgb(252, 3, 3), rgb(8, 8, 8));
-  height: 110vh;
+  height: 120vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
@@ -113,10 +113,11 @@
   margin-top: 3%;
   background: rgba(0,0,0,0);
   border: 2px solid #FFFFFF;
-  width: 10%;
-  height: 5%;
+  width: 15%;
+  height: 6%;
   border-radius: 0%; 
   color: white;
+  font-size: 25px;
 }
 .btn-lg:hover{
   background: #FFFFFF;
@@ -451,7 +452,12 @@ span+span{
   text-align: center;
   font-size: 11px;
 }
-
+#land_img{
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-left:0%;
+}
 }
 @media only screen and (min-width: 1024px)
 {
