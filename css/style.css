@@ -109,7 +109,7 @@
 .layer1{
   position: relative;
   background: linear-gradient(to bottom right, rgb(252, 3, 3), rgb(8, 8, 8));
-  height: 115vh;
+  height: 120vh;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
