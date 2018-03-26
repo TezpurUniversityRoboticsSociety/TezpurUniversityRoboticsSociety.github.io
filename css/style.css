@@ -124,6 +124,10 @@
   border: 1px solid #ad000b;
   color: black;
 }
+.btn-primary:not(:disabled):not(.disabled):active{
+  background-color: black;
+  border-color: white;
+}
 /*layer1 ends*/
 
 /*layer2 begins*/
@@ -146,12 +150,12 @@
   );
 }
 .layer2bg .main-text {
-  font-size: 20px;
+  font-size: 25px;
   padding-top: 5%;
   padding-bottom: 0.5%;
   text-align: center;
   align-content: center;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 #sub-text{
@@ -170,12 +174,48 @@ hr.style-two {
   color: black;
 }
 .layer2text p{
-  padding-top: 5%;
-  font-size: 25px;
+  padding-top: 2.5%;
+  font-size: 33px;
   font-weight: lighter;
+  width: 80%;
+  text-align: justify;
+  -moz-text-align-last: left;
+  text-align-last: left;
+  position: relative;
+  left: 10%;
+  color: black;
 }
-
-
+/*stats*/
+.top-to-bottom {
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(white), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(white, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(white, rgba(0, 0, 0, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(white, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, white, rgba(0, 0, 0, 0)) 1 100%;
+    height: 150px;
+    margin-top: -50%;
+    margin-left: -15%;
+    margin-right: -10%;
+}
+.stat{
+  text-align: center;
+  padding-top: 3.5% !important;
+}
+.fa-users, .fa-cubes, .fa-smile-o{
+  color: white;
+  font-size: 300% !important;
+}
+.col-lg-4{
+  font-size: 120%;
+}
+/*stats ends*/
 /*layer2 ends*/
 
 /*layer3 begins*/

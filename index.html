@@ -29,9 +29,6 @@
 	<!-- Start Slideshow HEAD section -->
 	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
 	<script type="text/javascript" src="engine0/jquery.js"></script>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
 	<!-- End Slideshow HEAD section --></head>
 <body ng-app="myApp">
     
@@ -81,7 +78,7 @@
             <div class="container">
                 <img id="land_img" src="./img/TURS.png">
             </div>
-            <h1 id="land_text"><span class="animated fadeIn build">BUILD. </span><strong class="animated fadeIn build" id="ani2">CREATE.</strong> <span class="animated fadeIn build" id="ani3">LEARN.</span></h1>
+            <h1 id="land_text"><span class="animated fadeIn">BUILD. </span><strong class="animated fadeIn" id="ani2">CREATE.</strong> <span class="animated fadeIn" id="ani3">LEARN.</span></h1>
             <h3 id="land_text2">Tezpur University's student led robotics club aimed at creating waves in the field of robotics.</h3>
             <button type="button" class="btn btn-primary btn-lg animated">Explore</button>
         </div>
@@ -94,7 +91,7 @@
             <h3 class="main-text" style="color: black"><strong>HELLO THERE</strong></h3>
             <h1 id="sub-text">We Are T.U.R.S.</h1>
             <hr class="style-two"></hr>
-            <div class="container animated layer2text">
+            <div class=" animated layer2text">
                 <p>
                 Tezpur University Robotics Society (TURS) was founded in 2010 to promote exchange of information about robotics to
                 stimulate education in the sciences, and to promote the enjoyment of robotics as a hobby.
@@ -102,7 +99,16 @@
                 We strive for the advancement of the theory and practice of robotics and automation engineering, science and 
                 technology and for the maintenance of high professional standards among its members. Society aids in promoting close co-operation and exchange of technical information among its members and to this end holds collaborative programs with industry, research centers, and educational institutes through workshops, seminars, class room training, exchange program etc.
                 </p>
-                <br><br>
+                <br><br><br>
+                <div class="container stat">
+                    <div class="container">
+                      <div class="row ">
+                        <div class="col-lg-4"><i class="fa fa-users" aria-hidden="true"></i> <br><br>30+ Members</div>
+                        <div class="col-lg-4"><i class="fa fa-cubes" aria-hidden="true"></i> <br><br>3+ Completed Projects<div class="vl top-to-bottom"></div></div>
+                        <div class="col-lg-4"> <i class="fa fa-smile-o" aria-hidden="true"></i> <br><br>1000+ Memories<div class="vl"></div></div>
+                      </div>
+                    </div>    
+                </div>
                 <!-- Start Slideshow BODY section --> 
 <!--                 <div id="wowslider-container0">
                 <div class="ws_images"><ul>
@@ -123,7 +129,7 @@
                 <script type="text/javascript" src="engine0/script.js"></script> -->
                 <!-- End Slideshow BODY section -->
             </div>
-            
+            <br><br><br><br><br><br><br><br><br>
         </div>
     </div>
      <!-- layer2 ends here -->
@@ -245,7 +251,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4 class="teachername"><strong>{{ Teacher.name }}</strong></h4> 
+                                <h4>{{ Teacher.name }}</h4> 
                                 <p>{{ Teacher.desig }}</p> 
                             </div>
                         </div>
@@ -266,7 +272,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4 class ="studentname"><strong>{{ student.name }}</strong></h4> 
+                                <h4>{{ student.name }}</h4> 
                                 <p>{{ student.desig }}</p> 
                             </div>
                         </div>
@@ -297,7 +303,7 @@
                                 </div>
                             </div>
                             <div class="container text1">
-                                <h4 class="member"><strong>{{ member.name }}</strong></h4> 
+                                <h4>{{ member.name }}</h4> 
                                 <p>{{ member.desig }}</p> 
                             </div>
                         </div>
