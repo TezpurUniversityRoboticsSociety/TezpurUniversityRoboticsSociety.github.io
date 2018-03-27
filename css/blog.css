@@ -1,0 +1,31 @@
+body{
+	border: 18px solid rgba(142, 146, 153,0.5);
+	font-family: "Work Sans";
+	padding: 30px;
+	max-width: 700px;
+	width: 80%;
+	margin: 20px auto;
+}
+
+h2{
+	font-weight: bold;
+}
+
+h4{
+	color: rgb(45, 135, 168);
+	letter-spacing: 3px;
+	font-size: .8em;
+}
+
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 95%;
+}
+
+.first{
+	border-left: 10px solid rgba(142, 146, 153,0.4);
+	padding-left: 5px; 
+}
