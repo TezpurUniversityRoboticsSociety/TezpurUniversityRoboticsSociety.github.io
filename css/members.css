@@ -7,7 +7,7 @@
   font-size: 11px;
 }
 
-/*Layer 1*/
+/*layer1 begins*/
 .layer1{
   position: relative;
   background-color: #f7f7f7;
@@ -18,7 +18,6 @@
   font-size: 30%;
 }
 .team-txt{
-  margin-top: 100px;
   font-family:'Josefin Sans', sans-serif;
   display: inline-block;
   padding-bottom: 5px;
@@ -36,16 +35,13 @@
 .layer1 .text1{
 	margin-bottom: 2%;
 }
-.small-text {
-
-}
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 90%;
     color: black;
     margin: 10% auto;
-    height: 300px auto;
+    height: 300px;
 }
 .overlay {
   position: absolute;
@@ -101,5 +97,3 @@ span+span{
   color: #E90606;
 }
 /*layer1 ends*/
-
- 
