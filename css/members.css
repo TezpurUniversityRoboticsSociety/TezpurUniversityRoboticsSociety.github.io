@@ -45,7 +45,7 @@
     width: 90%;
     color: black;
     margin: 10% auto;
-    height: 300px;
+    height: 300px auto;
 }
 .overlay {
   position: absolute;
@@ -101,3 +101,5 @@ span+span{
   color: #E90606;
 }
 /*layer1 ends*/
+
+ 
