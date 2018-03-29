@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Members | TURS</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/members.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto:100,400|Alegreya+Sans+SC:700" rel="stylesheet">
+    <script src="https://use.typekit.net/bkt6ydm.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Angular Js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="js/MemberController.js"></script>
+
+<body ng-app="myApp">
+    
+    <a href="top"></a>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="./index.html">
+        	<i  class="fa fa-arrow-left fa-3x"></i>
+        </a>
+    </nav>
+    <!-- Header Finishes Here -->
+ 
+
+
+
+    <!-- layer5 begins here -->
+    <div id="team" class="layer1">
+    <!-- Office bearer's -->
+        <div class="text1">
+            <h1 class="team-txt">Members</h1>
+        </div>   
+
+        <!-- ********************************* -->
+        <!-- ********* Member's ************** -->
+        <!-- ********************************* -->
+        <div ng-controller="MemberController">
+            <div class="container">
+                <div class="row">
+                    <!-- ************************************ -->
+                    <!-- First Loop for core teacher's Members-->
+                    <!-- ************************************ -->
+                    <div class="col-md-3 col-sm-6 " ng-repeat="Teacher in coreTeamTeachers"> 
+                        <div class="card {{ Teacher.cardClass }}">
+                            <div id="circle">
+                                <img id ="dp" src="{{ Teacher.img }}">
+                            </div>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <span><a href="{{ Teacher.link }}" target="_blank"><i class="icon fa fa-external-link" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ Teacher.mail }}" target="_blank"><i class="fa fa-envelope-open" style="color:white" aria-hidden="true"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="container text1">
+                                <h4>{{ Teacher.name }}</h4> 
+                                <p class="small-text">{{ Teacher.desig }}</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ************************** -->
+                    <!-- Core Student Team member's -->
+                    <!-- ************************** -->
+                    <div class="col-md-3 col-sm-6" ng-repeat="student in coreStudentMembers">
+                        <div class="card {{ student.cardClass }}">
+                            <div id="circle">
+                                <img id ="dp" src="{{ student.img }}">
+                            </div>
+                            <div class="overlay">
+                                <div class="icons">
+                                    <span><a href="{{ student.github }}" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ student.linkedin }}" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ student.facebook }}" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="container text1">
+                                <h4>{{ student.name }}</h4> 
+                                <p class="small-text">{{ student.desig }}</p> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6" ng-repeat="member in webTeam">
+                        <div class="card {{ member.cardClass }}">
+                            <div id="circle">
+                                <img id ="dp" src="{{ member.img }}">
+                            </div>	
+                            <div class="overlay">
+                                <div class="icons">
+                                    <span><a href="{{ member.github }}" target="_blank"><i class="fa fa-github" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ member.linkedin }}" target="_blank"><i class="fa fa-linkedin" style="color:white" aria-hidden="true"></i></a></span>
+                                    <span><a href="{{ member.facebook }}" target="_blank"><i class="fa fa-facebook" style="color:white" aria-hidden="true"></i></a></span>
+                                </div>
+                            </div>
+                            <div class="container text1">
+                                <h4>{{ member.name }}</h4> 
+                                <p class="small-text">{{ member.desig }}</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- layer5 ends here -->
+
+    <!-- ***************** -->
+    <!-- *****Footer****** -->
+    <!-- ***************** -->
+    <div class="footer">
+        <h4 id="lsttxt">Made with <i class="fa fa-heart" aria-hidden="true"></i> in <strong>TU</strong></h4>
+    </div>
+
+    <!-- Scripts -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap/bootstrap.js" type="text/javasript"></script>
+    <script src="https://use.fontawesome.com/4d6156a8c1.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
