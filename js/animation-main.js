@@ -93,3 +93,9 @@ $(".btn-lg").hover(
 		$(this).removeClass("bounce");
 	}
 )
+
+  $(document).ready(function(){
+      $("#myBtn").click(function(){
+          $("#myModal").modal();
+      });
+  });

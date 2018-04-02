@@ -95,6 +95,13 @@ input{
 .btn-primary:not(:disabled):not(.disabled):active{
 	background-color: black;
 }
+.modal-header h4{
+	position: absolute;
+	text-align: left;
+}
+.modal-footer .btn{
+	margin-right: 8rem;
+}
 /*register button ends*/
 /*card ends here*/
 
