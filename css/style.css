@@ -13,7 +13,7 @@ html{
   text-align: center;
   font-size: 11px;
 }
-/*misc ends*/
+/*misc ends*/ 
 .fill ul li a {
   position: relative;
 }
@@ -379,10 +379,19 @@ span+span{
 }
 #lsttxt{
   font-size: 12px;
-  margin-left: 47.5%;
-  margin-top: 7%;
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #666;
+}
+
+#foot_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 0.5%;
+  width: 5rem;
+  height: auto;
 }
 .fa-heart{
   color: #E90606;
