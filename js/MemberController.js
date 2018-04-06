@@ -8,7 +8,7 @@ app.controller('MemberController', ["$scope", function($scope){
             img: "./img/NAYAN.jpeg",
             link: "http://agnigarh.tezu.ernet.in/~nkakoty/",
             mail: "mailto:nkakoty@tezu.ernet.in",
-            cardClass: "zeror-left animated"
+            cardClass: "zeror-left  "
         },
         {
             name: "Dr. Riku Chutia",
@@ -16,7 +16,7 @@ app.controller('MemberController', ["$scope", function($scope){
             img: "./img/RIKU.jpeg",
             link: "http://agnigarh.tezu.ernet.in/~riku/",
             mail: "mailto:riku@tezu.ernet.in",
-            cardClass: "zeror-middle animated "
+            cardClass: "zeror-middle   "
         },
         {
             name: "Ms. Zahnupriya Kalita",
@@ -24,7 +24,7 @@ app.controller('MemberController', ["$scope", function($scope){
             img: "./img/ZK.jpeg",
             link: "http://www.tezu.ernet.in/dmech/people/zk.htm",
             mail: "malito:zk@tezu.ernet.in",
-            cardClass: "zeror-middle animated"
+            cardClass: "zeror-middle  "
         },
         {
             name: "Mr. Zubeen Bhuyan",
@@ -32,7 +32,7 @@ app.controller('MemberController', ["$scope", function($scope){
             img: "./img/ZB.jpeg",
             link: "http://agnigarh.tezu.ernet.in/~zubin/index.html",
             mail: "mailto:zubin@tezu.ernet.in",
-            cardClass: "zeror-right animated"
+            cardClass: "zeror-right  "
         }
     ];
 
@@ -47,7 +47,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/rajatsharma369007",
             facebook: "https://www.facebook.com/profile.php?id=100002977450437",
             linkedin: "https://www.linkedin.com/in/rajat-sharma-1144a1119/",
-            cardClass: "firstr-left animated"
+            cardClass: "firstr-left  "
         },
         {
             name: "Nabarun Barman",
@@ -56,7 +56,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "",
             facebook: "",
             linkedin: "",
-            cardClass: "firstr-middle animated"
+            cardClass: "firstr-middle  "
         },
         {
             name: "Dhruba Jyoti Sut",
@@ -65,7 +65,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "",
             facebook: "https://www.facebook.com/dhrubajyoti.sut.3",
             linkedin: "",
-            cardClass: "firstr-middle animated"
+            cardClass: "firstr-middle  "
         },
         {
             name: "Devanga Borah",
@@ -74,7 +74,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "",
             facebook: "",
             linkedin: "",
-            cardClass: "firstr-right animated"
+            cardClass: "firstr-right  "
         },
         {
             name: "Sourish Sarmah",
@@ -83,7 +83,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/sourishsarmah",
             facebook: "https://www.facebook.com/sourish.sarmah",
             linkedin: "",
-            cardClass: "secondr-left animated"
+            cardClass: "secondr-left  "
         },
         {
             name: "Nityananda Gohain",
@@ -92,7 +92,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/nityanandagohain",
             facebook: "https://www.facebook.com/nityanandagohain",
             linkedin: "https://www.linkedin.com/in/nityananda-gohain/",
-            cardClass: "secondr-middle animated"
+            cardClass: "secondr-middle  "
         },
         {
             name: "Kanishka Chowdhury",
@@ -101,7 +101,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/CKanishka",
             facebook: "https://www.facebook.com/kanishka.chowdhury.54",
             linkedin: "https://www.linkedin.com/in/kanishkachowdhury",
-            cardClass: "secondr-middle animated"
+            cardClass: "secondr-middle  "
         },
         {
             name: "Abhiroop Dutta",
@@ -110,7 +110,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "",
             facebook: "",
             linkedin: "",
-            cardClass: "secondr-right animated"
+            cardClass: "secondr-right  "
         },
         {
             name: "Adil Bin Bhutto",
@@ -119,7 +119,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/binbhutto",
             facebook: "https://www.facebook.com/adil4bhutto",
             linkedin: "https://www.linkedin.com/in/adil-b-686739b3/",
-            cardClass: "thirdr-left animated"
+            cardClass: "thirdr-left  "
         },
         {
             name: "Manoj Sharma",
@@ -128,7 +128,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/manojsharma221",
             facebook: "https://www.facebook.com/ms9954098610",
             linkedin: "https://www.linkedin.com/in/manoj-sharma-6b59b9155/",
-            cardClass: "thirdr-middle animated"
+            cardClass: "thirdr-middle  "
         },
         {
             name: "Biswajit Bharali",
@@ -137,7 +137,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "",
             facebook: "",
             linkedin: "",
-            cardClass: "thirdr-middle animated"
+            cardClass: "thirdr-middle  "
         },
         {
             name: "Saurabh Kannaujia",
@@ -146,7 +146,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/imonstershadow",
             facebook: "https://www.facebook.com/saurabh.kannaujia.9",
             linkedin: "https://www.linkedin.com/in/saurabh-kannaujia-9b5418159",
-            cardClass: "thirdr-right animated "
+            cardClass: "thirdr-right   "
         },
         {
             name: "Prateek Saikia",
@@ -155,7 +155,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/Prateekj7",
             facebook: "https://m.facebook.com/profile.php?id=100001788514377&ref=content_filter",
             linkedin: "",
-            cardClass: "fourthr-left animated"
+            cardClass: "fourthr-left  "
         },
         {
             name: "Sandeep Sarkar",
@@ -164,7 +164,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "",
             facebook: "",
             linkedin: "",
-            cardClass: "fourthr-middle animated"
+            cardClass: "fourthr-middle  "
         },
         {
             name: "Deepankar Acharya",
@@ -173,7 +173,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "",
             facebook: "",
             linkedin: "",
-            cardClass: "fourthr-middle animated"
+            cardClass: "fourthr-middle  "
         },
     ]
 
@@ -185,7 +185,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/AdirthaBorgohain",
             facebook: "https://www.facebook.com/EccentricityUnparalleled?ref=br_rs",
             linkedin: "https://www.linkedin.com/in/adirtha-borgohain-510402131",
-            cardClass: "fifthr-left animated"
+            cardClass: "fifthr-left  "
         },
         {
             name: "Nityananda Gohain",
@@ -194,7 +194,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/nityanandagohain",
             facebook: "https://www.facebook.com/nityanandagohain",
             linkedin: "https://www.linkedin.com/in/nityananda-gohain/",
-            cardClass: "fifthr-middle animated"
+            cardClass: "fifthr-middle  "
         },
         {
             name: "Sourish Sarmah",
@@ -203,7 +203,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://avatars2.githubusercontent.com/u/35569202?s=400&v=4",
             facebook: "https://www.facebook.com/sourish.sarmah",
             linkedin: "",
-            cardClass: "fifthr-middle animated"
+            cardClass: "fifthr-middle  "
         },
         {
             name: "Debasish Kalita",
@@ -212,7 +212,7 @@ app.controller('MemberController', ["$scope", function($scope){
             github: "https://github.com/debasishkalita",
             facebook: "https://www.facebook.com/debasishkalita.kalita",
             linkedin: "",
-            cardClass: "fifthr-right animated"
+            cardClass: "fifthr-right  "
         }
     ]
 }]);
