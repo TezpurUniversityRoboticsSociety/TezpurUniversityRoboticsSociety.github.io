@@ -623,7 +623,7 @@ span+span{
       transition: all ease .5s;
       
       background: white;
-      border-bottom: 1px solid black;
+      box-shadow: 3px 8px 16px 0 rgba(0,0,0,0.4);
     }
     .nav-item {
         margin-left: 20px;
