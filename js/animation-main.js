@@ -1,4 +1,3 @@
-
 $(document).scroll(function() {
 
 	var y=$(this).scrollTop();
@@ -18,19 +17,13 @@ $(document).scroll(function() {
 		}
  });
 
-
-
-
-$(document).ready(function() {
-	$('.slide-section').click(function(e) {
-		var linkHref = $(this).attr('href');	
-		$('html, body').animate({
-			scrollTop: $(linkHref).offset().top
-		});
-		e.preventDefault();
-	});
+//Scroll to desired sections on nav-bar clicks
+$(".slide-section").click(function(e) {
+	var linkHref = $(this).attr('href');
+    $('html,body').animate({
+        scrollTop: $(linkHref).offset().top},
+        'slow');
 });
-
 
 
 // For the first button to animate on hover
@@ -43,8 +36,18 @@ $(".btn-lg").hover(
 	}
 )
 
+// Go to ABOUT US section on clicking EXPLORE button
+  $(".btn-lg").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#about").offset().top},
+        'slow');
+});
+  
   $(document).ready(function(){
       $("#myBtn").click(function(){
           $("#myModal").modal();
       });
   });
+
+
+
